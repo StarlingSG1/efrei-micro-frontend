@@ -1,5 +1,6 @@
 import React from "react"
 import LocalButton from './Button';
+import { Title } from './components/Title';
 const Header = React.lazy(() => import('sharedComponents/Header'));
 const Footer = React.lazy(() => import('sharedComponents/Footer'));
 const App = () => (
@@ -7,8 +8,7 @@ const App = () => (
     <React.Suspense fallback={"Loading Header"}>
       <Header/>
     </React.Suspense>
-    <h1>Basic Host-Remote</h1>
-    <h2>Remote</h2>
+    <Title title={"Voici le Remote"}/>
     <React.Suspense fallback={"Loading Footer"}>
       <Footer/>
     </React.Suspense>
