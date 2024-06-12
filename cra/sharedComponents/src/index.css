@@ -78,7 +78,6 @@ ul, li, ol {
   }
 }
 
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -87,101 +86,12 @@ ul, li, ol {
   padding: .5em 1em;
 }
 
-/* Todo Style */
-.todo-container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 1rem;
-  padding: .5rem;
-  border-bottom: 1px solid #606060;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.todo-id {
-  color: #8c8c8c;
-  font-size: 1.25rem;
-}
-
-.todo-status {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: #8c8c8c;
-  border-radius: 2px;
-
-  &.todo-completed {
-    background-color: #6ac342;
-  }
-}
-
-.todo-button-more-container {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-/* Dashboard */
-.dashboard-wrapper {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  min-height: calc(100vh - 53px);
-}
-
-.navbar-container {
-  background-color: #f4f4f4;
-}
-
-.dashboard-main-container {
-  padding: 2rem;
-}
-
-
-/* Input container */
-.input-container {
-  display: grid;
-  gap: .2rem;
-}
-
-.input-textarea {
-  min-height: 70px;
-  resize: vertical;
-  background-color: #f4f4f4;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  padding: .5rem;
-  transition-duration: .2s;
-  transition-property: background-color, border-color;
-
-  &:hover {
-    border-color: #8c8c8c;
-  }
-
-  &:focus {
-    background-color: #fff;
-    border-color: #8c8c8c;
-    outline: none;
-  }
-}
-
-.dashboard-form {
-  display: grid;
-  gap: .5rem;
-}
-
-
-/* Note */
-.notes-container {
-  margin-top: 3rem;
-  display: grid;
-  gap: .5rem;
-}
-
-.note-container {
-  padding: .5rem;
-  background-color: #f4f4f4;
-  border-radius: 4px;
-}
-
-.note-date {
-  text-align: right;
-  color: #8c8c8c;
+.app-main-container {
+  flex-grow: 1;
 }
