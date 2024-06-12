@@ -53,7 +53,7 @@ return (
     </React.Suspense>
     <main className={'app-main-container'}>
       <div>
-        <input type="file" onChange={handleFileChange} />
+        <input type="file" accept="image/*" onChange={handleFileChange} />
         <button onClick={uploadFile}>Upload</button>
       </div>
     </main>
