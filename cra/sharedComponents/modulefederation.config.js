@@ -6,6 +6,7 @@ module.exports = {
     './Button': './src/Button',
     './Header': './src/Header',
     './Footer': './src/Footer',
+    './Publication': './src/Publication'
   },
   filename: 'remoteEntry.js',
   shared: {
