@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.24.7",
+    "dotenv": "^16.4.5",
+    "index.js": "link:@rspack/plugin-react-refresh/dist/index.js",
     "index.js\n:wq\n": "link:@rspack/plugin-react-refresh/dist/index.js\n:wq\n"
   }
 }
