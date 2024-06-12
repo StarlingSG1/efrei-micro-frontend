@@ -9,7 +9,9 @@ const App = () => (
     <React.Suspense fallback={"Loading Footer"}>
       <Header/>
     </React.Suspense>
+    <main>
     <Hero/>
+    </main>
     <React.Suspense fallback="Loading Button">
       <Footer />
       <RemoteButton />
