@@ -5,7 +5,7 @@ const RemoteButton = React.lazy(() => import('remote/Button'));
 const Header = React.lazy(() => import('sharedComponents/Header'));
 const Footer = React.lazy(() => import('sharedComponents/Footer'));
 const App = () => (
-  <div>
+  <div className={'app-container'}>
     <React.Suspense fallback={"Loading Footer"}>
       <Header/>
     </React.Suspense>
