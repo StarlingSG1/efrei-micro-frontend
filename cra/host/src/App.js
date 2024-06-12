@@ -8,8 +8,10 @@ const App = () => (
     <React.Suspense fallback={"Loading Footer"}>
       <Header/>
     </React.Suspense>
-    <h1>Basic Host-Remote</h1>
-    <h2>Host</h2>
+    <main>
+      <h1>Basic Host-Remote</h1>
+      <h2>Host</h2>
+    </main>
     <React.Suspense fallback="Loading Button">
       <Footer />
       <RemoteButton />

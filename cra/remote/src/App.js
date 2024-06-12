@@ -5,10 +5,12 @@ const Footer = React.lazy(() => import('sharedComponents/Footer'));
 const App = () => (
   <div>
     <React.Suspense fallback={"Loading Header"}>
-      <Header/>
+      <Header />
     </React.Suspense>
-    <h1>Basic Host-Remote</h1>
-    <h2>Remote</h2>
+    <main>
+      <h1>Basic Host-Remote</h1>
+      <h2>Remote</h2>
+    </main>
     <React.Suspense fallback={"Loading Footer"}>
       <Footer/>
     </React.Suspense>
