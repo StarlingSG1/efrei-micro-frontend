@@ -9,10 +9,8 @@ const App = () => (
       <Header/>
     </React.Suspense>
     <main className={'app-main-container'}>
-      <h1>Basic Host-Remote</h1>
-      <h2>Remote</h2>
+      <Title title={"Voici le Remote"}/>
     </main>
-    <Title title={"Voici le Remote"}/>
     <React.Suspense fallback={"Loading Footer"}>
       <Footer/>
     </React.Suspense>

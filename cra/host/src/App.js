@@ -10,10 +10,7 @@ const App = () => (
       <Header/>
     </React.Suspense>
     <main className={'app-main-container'}>
-      <h1>Basic Host-Remote</h1>
-      <h2>Host</h2>
-    <main>
-    <Hero/>
+      <Hero/>
     </main>
     <React.Suspense fallback="Loading Button">
       <Footer />
