@@ -48,7 +48,7 @@ const App = () => {
         <Header />
       </React.Suspense>
       <main className={'app-main-container'}>
-        <Title title={'Voici le Remote'} />
+        <Title>Voici le remote</Title>
         <div className="image-gallery">
           {images.map((url, index) => (
             <figure className={'image-container'}>
