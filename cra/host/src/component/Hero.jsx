@@ -1,6 +1,4 @@
-import { useMemo } from 'react';
-
-  export const formatTitle = (title) => `Hero du ${title}`
+export const formatTitle = (title) => `Hero du ${title}`
 
 export function Hero({title = "Host"}){
 
