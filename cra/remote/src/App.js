@@ -51,7 +51,10 @@ const App = () => {
         <Title>Voici le remote</Title>
         <div className="image-gallery">
           {images.map((url, index) => (
-            <img key={index} src={url} alt={`S3 Image ${index}`} />
+            <figure className={'image-container'}>
+              <img className={'image-item'} key={index} src={url} alt={`S3 Image ${index}`} />
+              <figcaption>Image #{index + 1}</figcaption>
+            </figure>
           ))}
         </div>
       </main>
