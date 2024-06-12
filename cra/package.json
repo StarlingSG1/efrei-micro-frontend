@@ -10,6 +10,7 @@
   "scripts": {
     "start": "pnpm --filter cra_* start",
     "build": "pnpm --filter cra_* build",
+    "test": "vitest",
     "e2e:ci": "pnpm start & npx cypress run --config-file ../cypress-e2e/config/cypress.config.ts --config '{\"supportFile\": \"../cypress-e2e/support/e2e.ts\"}' --spec \"./e2e/*.cy.ts\" --browser=chrome && lsof -ti tcp:3000,3001,3002 | xargs kill"
   },
   "devDependencies": {
@@ -22,8 +23,13 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "12.1.2",
+    "@vitejs/plugin-react": "^4.3.1",
     "dotenv": "^16.4.5",
     "index.js": "link:@rspack/plugin-react-refresh/dist/index.js",
-    "index.js\n:wq\n": "link:@rspack/plugin-react-refresh/dist/index.js\n:wq\n"
+    "index.js\n:wq\n": "link:@rspack/plugin-react-refresh/dist/index.js\n:wq\n",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
